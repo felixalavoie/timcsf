@@ -1,0 +1,14 @@
+<svg width="250" height="219" viewBox="0 0 250 219" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect x="3" y="3" width="244" height="174" rx="7" stroke="#06D6A0" stroke-width="6"/>
+<line y1="147" x2="250" y2="147" stroke="#06D6A0" stroke-width="6"/>
+<rect x="28" y="30" width="194" height="117" stroke="#06D6A0" stroke-width="6"/>
+<line x1="103" y1="162" x2="162" y2="162" stroke="#06D6A0" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+<mask id="path-5-inside-1" fill="white">
+<rect x="85" y="199" width="95" height="20" rx="5"/>
+</mask>
+<rect x="85" y="199" width="95" height="20" rx="5" stroke="#06D6A0" stroke-width="12" mask="url(#path-5-inside-1)"/>
+<line x1="106.987" y1="200.846" x2="112.185" y2="176.393" stroke="#06D6A0" stroke-width="6"/>
+<line x1="156.263" y1="202.077" x2="151.066" y2="177.624" stroke="#06D6A0" stroke-width="6"/>
+<path d="M146.481 79.9861C146.414 79.2192 147.202 78.6673 147.9 78.9926L164.383 86.6786C165.08 87.0039 165.164 87.9625 164.534 88.404L149.636 98.8354C149.005 99.2769 148.133 98.8703 148.066 98.1034L146.481 79.9861Z" fill="#06D6A0"/>
+<rect x="153" y="94.7358" width="8" height="8" rx="1" transform="rotate(-35 153 94.7358)" fill="#06D6A0"/>
+</svg>

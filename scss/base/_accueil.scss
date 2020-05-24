@@ -1,0 +1,394 @@
+main.accueil {
+  padding-top: 0;
+
+  //.partie__1 {
+  //  background-color: green;
+  //}
+  //.partie__2 {
+  //  background-color: pink;
+  //}
+  //.partie__3 {
+  //  //background-color: cyan;
+  //}
+  //.partie__4 {
+  //  background-color: greenyellow;
+  //}
+  //.partie__5 {
+  //  background-color: purple;
+  //}
+
+  text-align: center;
+
+
+  .partie {
+    width: 100%;
+    margin-top: 8rem;
+
+    @media (min-width: $medium) {
+      margin-top: 0;
+    }
+  }
+
+  .partie__1 {
+    padding-top: 12rem;
+    height: 100vh;
+  }
+
+  .partie__1--item {
+    margin-left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+  }
+
+  .partie__2 {
+    .imgCohorte {
+      max-width: 100%;
+    }
+    .etudiants {
+      a {
+        margin-top: 3rem;
+      }
+      a.lien {
+        margin-right: 3rem;
+      }
+      a.lien_bouton {
+        margin-left: 3rem;
+      }
+    }
+
+    .employeurs__diplomes, .employeurs__stages {
+      width: 45%;
+    }
+
+    .employeurs {
+      margin-top: 10rem;
+
+      &:after {
+        content: '  ';
+        display: block;
+        clear: both;
+      }
+
+      &__image {
+        width: 33%;
+      }
+
+      @media (min-width: $medium) {
+        margin-top: 10rem;
+        width: span(11 of 12);
+        margin-left: span(1 of 12)+gutter(1 of 12);
+
+        &__image {
+          float: left;
+          width: span(2 of 11);
+        }
+
+        h2, div {
+          margin-left: span(1 of 11)+gutter(1 of 11);
+        }
+
+        h2 {
+          //width: span(8 of 11);
+          margin: 0 !important;
+        }
+
+        div {
+          width: span(6 of 11);
+        }
+
+        &__stages {
+          margin-top: -2rem !important;
+        }
+      }
+    }
+
+    .employeurs__diplomes {
+      text-align: left;
+      float: left;
+    }
+
+    .employeurs__stages {
+      margin-top: 15rem;
+      text-align: right;
+      float: right;
+    }
+  }
+
+  .partie__3 {
+    .projets__gallerie {
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: space-between;
+    }
+
+    .projets__gallerie--item {
+      width: 45%;
+      margin-bottom: 3rem;
+      box-shadow: transparentize($white, 0.4) 0 0 10px 2px;
+    }
+
+    @media (min-width: $medium) {
+      .projets__gallerie {
+        //width: span(9 of 12);
+        //margin-left: span(3 of 12)+gutter(3 of 12);
+      }
+
+      .projets__gallerie--item {
+        width: span(3 of 12);
+      }
+
+      .blurred__title {
+        top: 200vh;
+        left: 60%;
+      }
+
+      h2 {
+        text-align: left;
+        padding-top: 15rem;
+        margin-left: span(1 of 12)+gutter(1 of 12);
+      }
+    }
+  }
+
+  .partie__4 {
+
+  }
+
+  .partie__5 {
+
+    @media (min-width: $medium) {
+      .temoignages {
+        display: flex;
+
+        .unTemoignage {
+          margin-top: 5rem;
+          width: span(6 of 12);
+        }
+      }
+    }
+
+    .unTemoignage {
+      text-align: center;
+      margin-bottom: 5rem;
+
+      &__image {
+        width: auto;
+        height: 15rem;
+
+        border: 3px solid $white;
+        border-radius: 50%;
+
+        margin-left: 2rem;
+      }
+
+      &__texte {
+        clear: both;
+        width: 80%;
+        margin-left: 50%;
+        margin-top: 2rem;
+        transform: translateX(-50%);
+        line-height: 1.5;
+        font-style: italic;
+      }
+
+      &__infos {
+        padding: 0;
+        align-self: center;
+        text-align: left;
+        line-height: 1.5;
+        width: 50%;
+        color: $white;
+
+        span {
+          display: inline-block;
+          width: 100%;
+        }
+
+        &--nom {
+          font-family: $Stint;
+          color: $green;
+          font-size: 2rem;
+        }
+
+        &--annee {
+          font-size: 1.2rem;
+        }
+
+        &--emplois {
+          font-size: 1.8rem;
+
+          a {
+            text-decoration: none;
+            color: $corail;
+            font-size: 2rem;
+          }
+
+        }
+      }
+    }
+  }
+
+  .row {
+    display: flex;
+    justify-content: space-around;
+  }
+}
+
+@media (min-width: $medium) {
+  div.partie__1 {
+    height: 100vh !important;
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .partie__1--item {
+      margin: 0;
+      padding: 0;
+      width: span(5 of 12);
+      transform: none;
+    }
+
+    .etuUnJour {
+      text-align: left;
+    }
+  }
+
+  .partie {
+    //position: relative;
+    vertical-align: top;
+    margin-top: -2.5rem !important;
+    min-height: 100vh;
+
+    &:first-of-type, &:nth-of-type(2) {
+      margin-top: 0 !important;
+    }
+
+    .blurred__title {
+      position: absolute;
+      left: 35%;
+      margin: 0;
+      padding-top: 0;
+      overflow: visible;
+      z-index: -1;
+    }
+  }
+
+  .partie__2 {
+
+    .etudiants {
+      padding: 5rem 0 0 0;
+    }
+
+    .etudiants {
+      text-align: left;
+      width: span(11 of 12);
+
+      .imgCohorte {
+        width: span(5 of 11);
+        float: right;
+        transform: translateY(-20%);
+        margin-left: span(1 of 11);
+      }
+    }
+
+    .employeurs {
+      margin-top: 0;
+    }
+
+  }
+
+  .partie__3 {
+  }
+
+  .partie__4 {
+    padding: 8rem 0 30rem 0;
+
+    .item {
+      width: span(5 of 12);
+      display: inline-block;
+    }
+
+    .inscriptions {
+      display: block;
+    }
+
+    .questions, .inscriptions {
+      text-align: left;
+      clear: left;
+
+      .lien__bouton {
+        margin-left: 50%;
+        transform: translateX(-50%);
+      }
+    }
+
+    .questions {
+      margin-top: 5rem;
+      float: left;
+    }
+
+    .quiz {
+      margin-top: -15rem;
+      margin-left: span(2 of 12)+gutter(2 of 12);
+      text-align: right;
+    }
+  }
+
+  .partie__5 {
+    padding-top: 8rem;
+
+    h2 {
+      text-align: right;
+      margin-right: span(1 of 12)+gutter(1 of 12);
+    }
+
+    .temoignages {
+      width: span(10 of 12);
+      margin-left: span(1 of 12) + gutter(1 of 12);
+      margin-top: 5rem;
+    }
+  }
+}
+
+.bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  //z-index: -1;
+
+  height: 100vh;
+  width: 100vw;
+}
+
+html {
+  background-image: url("../images/prism.png");
+  background-repeat: repeat;
+  z-index: -2;
+}
+
+.sociaux {
+  width: 100%;
+  background-color: $white;
+  padding: 3rem 0;
+  color: $paleBlack;
+
+  .sociaux__conteneur {
+    .facebook, .twitter {
+      width: span(5 of 12);
+      max-height: 20rem;
+      overflow-y: scroll;
+      float: left;
+    }
+
+    .twitter {
+      margin-left: span(2 of 12)+gutter(2 of 12);
+    }
+  }
+
+  @media (max-width: $medium) {
+    display: none;
+  }
+}

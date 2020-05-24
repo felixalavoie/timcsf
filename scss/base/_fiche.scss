@@ -1,0 +1,115 @@
+.fiche {
+
+  &__titre {
+    text-align: center;
+  }
+
+  &__image {
+    border-radius: 50%;
+
+    box-shadow: 5px -5px $green;
+  }
+
+  &__liens {
+    padding: 5rem 1rem;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+
+    a {
+      font-weight: bold;
+      display: inline-block;
+      text-align: center;
+      line-height: 5rem;
+
+      width: 15rem;
+      height: 5rem;
+      margin-bottom: 1.5rem;
+    }
+
+    &--linkedin {
+      background-color: #0E76A8;
+      color: $white;
+    }
+
+    &--portfolio {
+      background-color: #A96BBF;
+      color: $white;
+    }
+
+    &--twitter {
+      background-color: #00acee;
+      color: $white;
+    }
+
+    &--courriel {
+      background-color: $corail;
+      color: $white;
+    }
+  }
+
+  &__interets {
+    padding-top: 5rem;
+
+    div {
+      margin-bottom: 3rem;
+    }
+  }
+
+  &__projets {
+    padding-top: 5rem;
+  }
+}
+
+.unProjet {
+  margin-bottom: 5rem;
+
+  @media (min-width: $medium) {
+    width: span(6 of 12);
+    float: left;
+
+    &:last-of-type {
+      margin-left: gutter(1 of 12);
+    }
+  }
+
+  &__image {
+    width: 100%;
+  }
+
+  &__tech {
+    font-family: $Stint;
+    color: $green;
+  }
+}
+
+@media (min-width: $medium) {
+  .fiche__liens {
+    justify-content: space-around;
+    width: span(8 of 12);
+    margin-left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .fiche__image {
+    margin-top: 2rem;
+    margin-left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .fiche__profil {
+    width: span(5 of 12);
+    display: inline-block;
+  }
+
+  .fiche__interets {
+    display: inline-block;
+    width: span(6 of 12);
+    float: right;
+    padding-top: 0;
+  }
+
+  .fiche__projets {
+    margin-top: 10rem;
+  }
+}

@@ -1,0 +1,56 @@
+.stages__div {
+  width: 80%;
+  margin-bottom: 6rem;
+
+  @media (min-width: $medium) {
+    width: span(6 of 12);
+  }
+
+  &--gauche {
+    text-align: left;
+
+    @media (min-width: $medium) {
+      margin-left: span(1 of 12)+gutter(1 of 12);
+    }
+  }
+
+  &--droite {
+    text-align: right;
+    margin-left: 20%;
+
+    @media (min-width: $medium) {
+      margin-left: span(5 of 12)+gutter(5 of 12);
+    }
+  }
+}
+
+.employeur {
+  margin-top: 9rem;
+  text-align: left;
+
+  &__lien--competences {
+    color: $corail;
+  }
+
+  @media (min-width: $medium) {
+    width: span(6 of 12);
+    margin-left: span(1 of 12)+gutter(1 of 12);
+  }
+}
+
+@media (min-width: $medium) {
+  .intro__text {
+    width: span(5 of 12);
+    float: left;
+  }
+
+  .intro__image {
+    width: span(4 of 12);
+    margin-left: span(3 of 12);
+    margin-bottom: 5rem;
+  }
+}
+
+.stages {
+  padding-bottom: 8rem;
+}

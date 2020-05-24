@@ -1,0 +1,39 @@
+.lien__bouton {
+  display: inline-block;
+  padding: 2rem 4rem;
+  color: $white;
+  //background-color: $corail;
+  border-radius: 5px;
+
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.bouton__submit {
+  @media (max-width: $medium) {
+    margin-left: 50%;
+    transform: translateX(-52%);
+  }
+}
+
+.bouton__full {
+  background-size: 200% 100%;
+  background-image: linear-gradient(to right, $corail 50%, $white 50%);
+  transition: .1s ease-in-out;
+
+  &:hover {
+    background-position: 100% 0;
+    color: $corail;
+  }
+}
+
+.lien {
+  color: $corail;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+
+  &:hover {
+    color: $corail;
+  }
+}

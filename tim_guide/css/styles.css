@@ -1,0 +1,345 @@
+@charset "UTF-8";
+/**
+ * @author Prenom Nom courriel
+ * @todo Lier les modules avec des instructions @import
+ * @todo Compléter selon l'énoncé de l'exercice
+ */
+/*
+ * ------------------
+ * TABLE DES MATIERES
+ * ------------------
+ * Librairies
+ ** Normalize
+ * UTILITAIRES
+ ** Variables
+ ** Mixins
+ * BASE
+ ** Typographie
+ ** Hyperliens
+ ** Boutons
+ * MODULES
+ ** gds - Styles généraux du Guide de styles
+ ** palette - Palette de couleurs
+ ** listeInteractivite - Éléments interactifs
+ */
+/****** Librairies ******/
+/** Normalize **/
+/**** UTILITAIRES ****/
+/** Variables **/
+/**
+* @author Prenom Nom courriel
+* @todo Importer la fonte Futura
+* @todo Personnaliser les variables selon les spécifications du guide visuel
+*       Certaines variables devront être définies par une fonction de coloration
+* @todo Compléter selon l'énoncé de l'exercice
+* @todo Utiliser le sélecteur & pour les sélecteurs des différentes couleurs
+*/
+/** Polices de caractères **/
+/** Palette de couleurs **/
+/* Couleurs de base */
+/* Autres couleurs */
+/** Points de rupture **/
+/** Mixins **/
+/**
+* @author Ève Février - efevrier@cegep-ste-foy.qc.ca
+* @author Yves Hélie - yves.helie@cegep-ste-foy.qc.ca
+*/
+/**
+ * ----------------------------
+ * TABLE DES MATIERES - MIXINS
+ * ----------------------------
+ * Utilitaires de base
+ ** Box sizing
+ ** Clearfix
+ * Accessibilité
+ * Typographie
+ */
+/********** Utilitaires de base **********/
+/** Box sizing **/
+/* Clearfix */
+/********* Accessibilité *********/
+.visuallyhidden,
+.screen-reader-only {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+.visuallyhidden.focusable:active, .visuallyhidden.focusable:focus,
+.screen-reader-only.focusable:active,
+.screen-reader-only.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  width: auto;
+}
+
+/******** Typographie *********/
+/****** BASE ******/
+/** Typographie **/
+/**
+* @author Prenom Nom courriel
+* @todo Préciser l’interlignage sur le body pour l’écran large
+* @todo Utiliser le mixin fontSize pour définir les tailles de polices
+* @todo Utiliser une variable pour la media query de la règle body
+*/
+/**** Typographie responsive ****/
+html {
+  font-size: 62.5%;
+  color: #FFF;
+  background-color: #272727;
+}
+
+body {
+  font-family: Open Sans, Roboto, sans-serif;
+  font-size: 16px;
+  /* 16px pour toutes les largeurs d'écran */
+  font-size: 1.6rem;
+  line-height: 1.375;
+  /* facteur multiplicateur de la taille de la police 1.375x16=22 */
+}
+h1,
+.titreNiveau1 {
+  font-family: Open Sans, Roboto, sans-serif;
+  font-weight: 500;
+}
+
+h1,
+.titreNiveau1 {
+  font-size: 28px;
+  font-size: 2.8rem;
+  margin: 0;
+}
+h1--desktop,
+.titreNiveau1--desktop {
+  font-size: 48px;
+  font-size: 4.8rem;
+  padding-bottom: 15px;
+  position: relative;
+}
+h1--desktop:after,
+.titreNiveau1--desktop:after {
+  background-color: #272727;
+  content: "";
+  display: inline-block;
+  width: 150px;
+  height: 8px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+h3,
+.titreNiveau3 {
+  font-family: Open Sans, Roboto, sans-serif;
+  color: #06D6A0;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 2.1rem;
+}
+h3--desktop,
+.titreNiveau3--desktop {
+  font-size: 3.2rem;
+}
+
+.texte {
+  font-family: Open Sans, Roboto, sans-serif;
+  font-size: 1.6rem;
+  line-height: 1.5;
+}
+.texte--desktop {
+  font-size: 1.8rem;
+}
+
+.greenfont {
+  color: #06D6A0;
+}
+
+.redfont {
+  color: #FF7F50;
+}
+
+.h2 {
+  font-family: "Stint Ultra Expanded", cursive;
+  font-size: 3.2rem;
+  text-transform: uppercase;
+}
+.h2:before {
+  color: #06D6A0;
+  content: "< ";
+  display: inline-block;
+}
+.h2:after {
+  color: #06D6A0;
+  content: " />";
+  display: inline-block;
+}
+.h2-mobile {
+  font-size: 2.1rem;
+}
+
+/** Hyperliens **/
+/**
+* @author Prenom Nom courriel
+* @todo Compléter selon l'énoncé de l'exercice
+*/
+.hyperlien {
+  color: #FF7F50;
+  text-decoration: none;
+  font-size: 1.8rem;
+}
+.hyperlien--visited {
+  color: #FF7F50;
+}
+.hyperlien--hover {
+  color: #FF7F50;
+  text-shadow: 0 0 2px rgba(255, 255, 255, 0.8);
+}
+.hyperlien--active {
+  color: #06D6A0;
+  text-decoration: underline;
+}
+
+/** Boutons **/
+/**
+* @author Prenom Nom courriel
+* @todo Compléter selon l'énoncé de l'exercice
+*/
+.bouton {
+  background-color: #FF7F50;
+  color: #FFF;
+  padding: 2rem 4rem;
+  border-radius: 0.2rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.bouton--hover {
+  background-color: #FFF;
+  color: #FF7F50;
+  box-shadow: 0 0 8px rgba(255, 127, 80, 0.8);
+  padding: 2.2rem 4.4rem;
+}
+.bouton--active {
+  background-color: #06D6A0;
+}
+.bouton--inverse {
+  background-color: white;
+  border: 2px solid #FF7F50;
+}
+.bouton--inverse--hover {
+  border-color: rgba(255, 127, 80, 0.75);
+}
+.bouton--inverse--active {
+  border-color: rgba(255, 127, 80, 0.5);
+}
+
+/****** MODULES ******/
+/** gds - Styles généraux du Guide de styles **/
+/**
+* @author Yves Hélie - yves.helie@cegep-ste-foy.qc.ca
+* @todo Utiliser le mixin fontSize pour définir les tailles de polices
+*/
+.gds {
+  margin: 5em auto;
+  max-width: 800px;
+}
+.gds__titre {
+  font-size: 60px;
+  font-size: 6rem;
+  color: black;
+}
+.gds__sousTitre {
+  color: white;
+  background-color: darkgray;
+  font-size: 30px;
+  font-size: 3rem;
+  padding: 1rem;
+  text-align: left;
+}
+.gds__categorie {
+  border-bottom: 1px solid lightgray;
+}
+
+/** palette - Palette de couleurs **/
+/**
+* @author Prenom Nom courriel
+* @todo Compléter selon l'énoncé de l'exercice
+* @todo Utiliser le sélecteur & pour les sélecteurs des différentes couleurs
+*/
+.palette {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: flex-start;
+  justify-content: space-between;
+  list-style-type: none;
+  padding: 0;
+}
+.palette__item {
+  flex: 1 1 100%;
+  text-align: center;
+  margin-right: 2em;
+}
+.palette__item:last-child {
+  margin-right: 0;
+}
+.palette__couleur {
+  padding-top: 70%;
+  /* Complétez ici pour chacune des variations de couleurs
+   * (Ex. .palette__couleur--bleuMoyen)
+   * Utilisez & pour composer vos sélecteurs CSS selon l'approche BEM
+   */
+}
+.palette__couleur--corail {
+  background-color: #FF7F50;
+}
+.palette__couleur--corail-alpha20 {
+  background-color: rgba(255, 127, 80, 0.8);
+}
+.palette__couleur--corail-alpha40 {
+  background-color: rgba(255, 127, 80, 0.6);
+}
+.palette__couleur--green {
+  background-color: #06D6A0;
+}
+.palette__couleur--green-alpha20 {
+  background-color: rgba(6, 214, 160, 0.8);
+}
+.palette__couleur--green-alpha40 {
+  background-color: rgba(6, 214, 160, 0.6);
+}
+.palette__couleur--paleBlack {
+  background-color: #272727;
+}
+.palette__couleur--white {
+  background-color: #FFF;
+}
+.palette__details {
+  font-size: 0.75em;
+}
+
+/** listeInteractivite - Éléments interactifs **/
+/**
+* @author Yves Hélie - yves.helie@cegep-ste-foy.qc.ca
+*/
+.listeInteractivite {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: flex-start;
+  justify-content: space-between;
+  list-style-type: none;
+  padding: 0;
+}
+.listeInteractivite__item {
+  flex: 1 1 100%;
+}
+
+/*# sourceMappingURL=styles.css.map */

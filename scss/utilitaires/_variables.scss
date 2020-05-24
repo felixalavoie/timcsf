@@ -1,0 +1,49 @@
+/**
+* @author Prenom Nom courriel
+* @todo Importer la fonte Futura
+* @todo Personnaliser les variables selon les spécifications du guide visuel
+*       Certaines variables devront être définies par une fonction de coloration
+* @todo Compléter selon l'énoncé de l'exercice
+* @todo Utiliser le sélecteur & pour les sélecteurs des différentes couleurs
+*/
+
+/** Polices de caractères **/
+
+//@font-face {
+//  font-family: Futura, sans-serif;
+//  src: 	url('../fonts/Futura.ttc') format('truetype');
+//}
+
+//@font-face {
+//  font-family: "Stint Ultra Expended";
+//  src: 	url('/fonts/StintUltraCondensed-Regular.ttf') format('truetype');
+//}
+
+$OpenSans : Open Sans, Roboto, sans-serif;
+$Stint : 'Stint Ultra Expanded', cursive;
+
+/** Palette de couleurs **/
+// Utiliser http://chir.ag/projects/name-that-color pour obtenir des noms uniques et mémorisables
+// Permettez-vous d'utiliser un nom de variable plus explicite si la suggestion de name-that-color est trop étrange
+
+/* Couleurs de base */
+$paleBlack: #272727;
+$green: #06D6A0;
+$corail: #FF7F50;
+$white: #FFF;
+$red: red;
+
+
+$corailTransparent : transparentize($corail, 0.40);
+
+/* Autres couleurs */
+$hyperlien: $corail;
+
+/** Points de rupture **/
+$big : 1001px;
+$medium : 801px;
+$small : 601px;
+
+a {
+  text-decoration: none;
+}

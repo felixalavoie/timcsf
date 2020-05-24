@@ -1,0 +1,101 @@
+/**
+* @author Prenom Nom courriel
+* @todo Préciser l’interlignage sur le body pour l’écran large
+* @todo Utiliser le mixin fontSize pour définir les tailles de polices
+* @todo Utiliser une variable pour la media query de la règle body
+*/
+
+/**** Typographie responsive ****/
+
+html {
+  font-size: 62.5%;
+  color: $white;
+  background-color: $paleBlack;
+}
+
+body {
+  font-family: $OpenSans;
+  font-size: 16px; /* 16px pour toutes les largeurs d'écran */
+  font-size: 1.6rem;
+  line-height: 1.375; /* facteur multiplicateur de la taille de la police 1.375x16=22 */
+  @media (min-width: 601px) {
+  }
+}
+
+h1,
+.titreNiveau1 {
+  font-family: $OpenSans;
+  font-weight: 500;
+}
+
+h1,
+.titreNiveau1 {
+  @include fontSize(28px);
+  margin: 0;
+  &--desktop {
+    font-size: 48px;
+    font-size: 4.8rem;
+    padding-bottom: 15px;
+    position: relative;
+    &:after {
+      background-color: $paleBlack;
+      content: "";
+      display: inline-block;
+      width: 150px;
+      height: 8px;
+      position: absolute;
+      left: 0;
+      bottom: 0;
+    }
+  }
+}
+
+h3,
+.titreNiveau3 {
+  font-family: $OpenSans;
+  color: $green;
+  text-transform: uppercase;
+  font-weight: bold;
+
+  font-size: 2.1rem;
+  &--desktop {
+    font-size: 3.2rem;
+  }
+}
+
+.texte {
+  font-family: $OpenSans;
+  font-size: 1.6rem;
+  line-height: 1.5;
+  &--desktop {
+    font-size: 1.8rem;
+  }
+}
+
+.greenfont {
+  color: $green;
+}
+
+.redfont {
+  color: $corail;
+}
+
+.h2 {
+  font-family: $Stint;
+  font-size: 3.2rem;
+  text-transform: uppercase;
+  &:before {
+    color: $green;
+    content: "<\00a0";
+    display: inline-block;
+  }
+  &:after {
+    color: $green;
+    content: "\00a0/>";
+    display: inline-block;
+  }
+
+  &-mobile {
+    font-size: 2.1rem;
+  }
+}

@@ -1,0 +1,36 @@
+/**
+ * @author Félix-Antoine Lavoie
+*/
+
+/****** Librairies ******/
+@import "../node_modules/normalize.scss/normalize.scss";
+@import "../node_modules/susy/sass/susy";
+@import "../node_modules/susy/sass/plugins/svg-grid";
+
+/**** Utilitaires ****/
+@import "utilitaires/variables";
+@import "utilitaires/mixins";
+
+/****** Modules ******/
+//@import "modules/boutons";
+@import "modules/menu";
+@import "modules/footer";
+@import "modules/boutons";
+@import "modules/blurred";
+//@import "modules/scrollsnap";
+@import "modules/svglines";
+
+/****** Base ******/
+//@import "base/general";
+@import "base/typo";
+@import "base/globalgrid";
+@import "base/contact";
+@import "base/stages";
+@import "base/accueil";
+@import "base/diplomes";
+@import "base/formation";
+@import "base/fiche";
+@import "base/404";
+
+/****** Grille ******/
+@import "grille/general";

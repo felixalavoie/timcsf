@@ -1,0 +1,16 @@
+.perdu {
+  min-height: 100vh;
+  padding: 10rem 0 0 0;
+
+  .gros {
+    font-family: $Stint;
+    font-size: 32rem;
+    font-weight: bolder;
+
+    text-shadow: $green 1.5rem -1.5rem 0;
+  }
+
+  .texte {
+    font-size: 3.2rem;
+  }
+}

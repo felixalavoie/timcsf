@@ -1,0 +1,31 @@
+{
+    "nom": {
+        "regexp": "^[A-zÀ-ú -]{3,30}$",
+        "erreur": "Veuillez entrez un nom valide",
+        "vide": "Veuillez remplir ce champ"
+    },
+
+    "courriel": {
+        "regexp": "^[a-zA-Z0-9.!%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\\.[a-zA-Z0-9-]+)*$",
+        "erreur": "Veuillez remplir une adresse courriel valide",
+        "vide": "Veuillez remplir ce champ"
+    },
+
+    "destinataire": {
+        "regexp": "^[0-9]{1,2}$",
+        "erreur": "Aye! Tu devrais pas voir ça! Qu'est-ce que tu fais?",
+        "vide": "Veuillez remplir ce champ"
+    },
+
+    "sujet": {
+        "regexp": "^[A-zÀ-ú -.,'\"%$@+-=&!?*~:;\/]{2,400}$",
+        "erreur": "Veuillez indiquez un sujet de message sans charactère spéciaux",
+        "vide": "Veuillez remplir ce champ"
+    },
+
+    "message":{
+        "regexp": "^[A-zÀ-ú -.,'\"%$@+-=&!?*~:;\/]{2,400}$",
+        "erreur": "Veuillez indiquez écrire votre message sans charactère spéciaux",
+        "vide": "Veuillez remplir ce champ"
+    }
+}

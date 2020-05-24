@@ -1,0 +1,185 @@
+.contact {
+  padding-bottom: 8rem;
+
+  .intro {
+    margin-bottom: 8rem;
+    display: flex;
+    align-items: center;
+
+    @media (min-width: $medium) {
+      margin-bottom: 4rem;
+    }
+
+    @media (max-width: $big) {
+      padding: 0 2rem;
+    }
+
+    &__text {
+      width: 65%;
+      //float: left;
+      //@media (min-width: $medium) {
+      //  padding: 3rem 0;
+      //}
+    }
+    &__image {
+      width: 30%;
+      margin-left: 5%;
+      vertical-align: middle;
+      float: right;
+    }
+
+    @media (min-width: $medium) {
+      width: span(10 of 12);
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+
+  .responsables {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+
+    @media (min-width: $medium) {
+      width: span(5 of 12);
+      margin-left: span(1 of 12)+gutter(1 of 12);
+      margin-right: 0;
+      float: left;
+    }
+
+    .unResponsable {
+      //width: 100%;
+      clear: both;
+      margin: 2rem 0;
+      display: flex;
+
+      &__image {
+        border-radius: 50%;
+        border: solid 3px $green;
+
+        margin: 0 !important;
+        padding: 0;
+      }
+
+      &__infos {
+        vertical-align: middle;
+        text-align: left;
+        line-height: 1.5;
+        padding: 3rem 2rem;
+
+        span {
+          display: block;
+        }
+
+        &--nom {
+          font-size: 2.1rem;
+          font-weight: bolder;
+          color: $green;
+        }
+
+        &--titre {
+          font-weight: bold;
+        }
+      }
+    }
+  }
+
+  .formContact {
+    margin-top: 5rem;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+
+    @media (min-width: $medium) {
+      width: span(5 of 12);
+      margin-left: gutter(1 of 12);
+      margin-right: 0;
+      float: left;
+      margin-top: 0;
+    }
+
+    &__div {
+      margin: 2rem 0;
+    }
+
+    &__label {
+      display: block;
+      color: $green;
+      text-transform: uppercase;
+      font-weight: bold;
+      line-height: 3;
+    }
+
+    &__input, select {
+      color: $paleBlack;
+      display: block;
+      width: 95%;
+      height: 5rem;
+      border-radius: 5px;
+      border: 2px solid transparentize($green, 0.6);
+      padding: 1rem;
+
+      &:focus {
+        outline: 3px solid $green;
+      }
+    }
+  }
+
+  .bouton__submit {
+    margin-top: 3rem;
+  }
+
+  #message {
+    height: 20rem;
+  }
+
+  .champErreur {
+    color: $red;
+
+    input, textarea, select {
+      border: 2px solid transparentize($red, 0.4);
+      resize: none;
+    }
+  }
+}
+
+.message__envoye {
+  border-left: 6px solid $green;
+  margin-top: 5rem;
+  padding: 2rem 0 2rem 3rem;
+  overflow: hidden;
+  width: 100%;
+  animation-name: retro;
+  animation-delay: 2s;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  display: block;
+
+  p {
+    overflow: hidden;
+    display: inline-block;
+
+  }
+}
+
+@keyframes retro {
+  0% {
+    padding: 2rem 0 2rem 3rem;
+  }
+  20% {
+    padding: 2rem 0 2rem 5rem;
+  }
+  40% {
+    padding: 2rem 0 2rem 3rem;
+    opacity: 1;
+  }
+  99% {
+    display: block;
+  }
+  100% {
+    padding: 2rem 0 2rem 3rem;
+    opacity: 0;
+    display: none;
+  }
+}

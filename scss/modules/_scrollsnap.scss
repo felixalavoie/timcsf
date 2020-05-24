@@ -1,0 +1,17 @@
+#contenu {
+  scroll-snap-type: y proximity;
+  overflow-y: scroll;
+  max-height: 100vh;
+}
+
+.partie {
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+
+  position: relative;
+  overflow: visible;
+
+  &:last-of-type {
+    scroll-snap-stop: normal;
+  }
+}

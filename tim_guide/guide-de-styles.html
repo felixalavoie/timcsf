@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Guide de styles</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link href="https://fonts.googleapis.com/css?family=Stint+Ultra+Expanded&display=swap" rel="stylesheet">
+</head>
+<body id="gds" class="gds">
+  <h1 class="gds__titre">Guide de styles</h1>
+
+  <section>
+
+    <h2 class="gds__sousTitre">Couleurs</h2>
+
+    <ul class="palette">
+      <li class="palette__item">
+        <div class="palette__couleur palette__couleur--paleBlack"></div>
+        <p class="palette__description"><code>$paleBlack</code> <br>#272727</p>
+      </li>
+      <li class="palette__item">
+        <div class="palette__couleur palette__couleur--green"></div>
+        <p class="palette__description"><code>$green</code> <br>#06D6A0</p>
+      </li>
+      <li class="palette__item">
+        <div class="palette__couleur palette__couleur--corail"></div>
+        <p class="palette__description"><code>$corail</code> <br>#FF7F50</p>
+      </li>
+      <li class="palette__item">
+        <div class="palette__couleur palette__couleur--white"></div>
+        <p class="palette__description"><code>$white</code> <br>#FFF</p>
+      </li>
+    </ul>
+
+    <ul class="palette">
+      <li class="palette__item">
+        <div class="palette__couleur palette__couleur--green-alpha20"></div>
+        <p class="palette__description"><code>$green</code> <br>Transparence 20%</p>
+        <p class="palette__details">Utilisé pour ldes éléments décoratifs.</p>
+      </li>
+      <li class="palette__item">
+        <div class="palette__couleur palette__couleur--corail-alpha20"></div>
+        <p class="palette__description"><code>$corail</code> <br> Transparence 20%</p>
+        <p class="palette__details">Utilisé pour les états de survol des boutons et liens.</p>
+      </li>
+      <li class="palette__item">
+        <div class="palette__couleur palette__couleur--corail-alpha40"></div>
+        <p class="palette__description"><code>$corail</code> <br> Transparence 40%</p>
+        <p class="palette__details">Utilisé pour les état active et visited des lies.</p>
+      </li>
+    </ul>
+
+    <table class="gds__tableau">
+      <thead>
+      <tr>
+        <th><h2 class="gds__sousTitre">Textes - Desktop</h2></th>
+        <th><h2 class="gds__sousTitre">Textes - Mobile</h2></th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr>
+        <td>
+          <p class="titreNiveau1 titreNiveau1--desktop">TIM</p>
+          <p>
+            <small>Visually hidden -> remplacé par Logo de la TIM</small>
+          </p>
+        </td>
+        <td>
+          <p class="titreNiveau1 titreNiveau1--mobile">TIM</p>
+          <p>
+            <small>Visually hidden -> remplacé par Logo de la TIM</small>
+          </p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p class="titreNiveau2 titreNiveau2--desktop h2">Titre niveau 2</p>
+          <p>
+            <small>Stint Ultra Expanded, 3.2rem</small><br/>
+            <small>"< " :before</small><br/>
+            <small>" />" :after</small>
+          </p></td>
+        <td>
+          <p class="titreNiveau2 titreNiveau2--mobile h2-mobile h2">Titre niveau 2</p>
+          <p>
+            <small>Stint Ultra Expanded, 2.1rem</small><br/>
+            <small>"< " :before</small><br/>
+            <small>" />" :after</small>
+          </p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p class="titreNiveau3 titreNiveau3--desktop">Titre niveau 3</p>
+          <p>
+            <small>Open Sans Bold, 3.2rem</small>
+          </p>
+        </td>
+        <td>
+          <p class="titreNiveau3 titreNiveau3--mobile">Titre niveau 3</p>
+          <p>
+            <small>Open Sans Bold, 2.1rem</small>
+          </p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p class="texte texte--desktop">Texte courant lorem ipsum dolor sit amet, consectetur adipisicing elit. A corporis dolores enim eveniet id inventore laborum modi nam necessitatibus officia, perspiciatis quasi sint soluta, suscipit voluptates? Esse ex harum incidunt.</p>
+          <p><small>(Open Sans, 18rem avec interlignage de 27 pts)</small></p>
+        </td>
+        <td>
+          <p class="texte texte--mobile">Texte courant lorem ipsum dolor sit amet, consectetur adipisicing elit. A corporis dolores enim eveniet id inventore laborum modi nam necessitatibus officia, perspiciatis quasi sint soluta, suscipit voluptates? Esse ex harum incidunt.</p>
+          <p><small>(Open Sans, 16pts avec interlignage de 24 pts)</small></p>
+        </td>
+      </tr>
+
+      </tbody>
+    </table>
+
+
+    <h2 class="gds__sousTitre">Boutons / Éléments interactifs</h2>
+
+    <h3 class="gds__categorie">Hyperliens de base (pas de classe)</h3>
+
+    <ul class="listeInteractivite">
+      <li class="listeInteractivite__item">
+        <p><a class="hyperlien"  href="#">a:link</a></p>
+        <p>Couleur $corail</p>
+      </li>
+      <li class="listeInteractivite__item">
+        <p><a class="hyperlien hyperlien--visited"  href="#">a:visited</a></p>
+        <p>Couleur $corail</p>
+      </li>
+      <li class="listeInteractivite__item">
+        <p><a class="hyperlien hyperlien--hover"  href="#">a:hover</a></p>
+        <p>Couleur $corail avec text-shadow $white transparent<br>Souligné</p>
+
+      </li>
+      <li class="listeInteractivite__item">
+        <p><a class="hyperlien hyperlien--active"  href="#">a:active</a></p>
+        <p>Couleur $greeen <br>Souligné</p>
+      </li>
+    </ul>
+
+    <h3 class="gds__categorie">Boutons</h3>
+
+    <ul class="listeInteractivite">
+      <li class="listeInteractivite__item">
+        <p><a href="#" class="bouton">Bouton</a></p><br>
+        <p>État de base</p>
+        <p>Couleur $corail</p>
+      </li>
+      <li class="listeInteractivite__item">
+        <p><a href="#" class="bouton bouton--hover">Bouton</a></p><br>
+        <p>État survol</p>
+        <p>Couleur $corail, scale(1.05), box-shadow $white</p>
+      </li>
+      <li class="listeInteractivite__item">
+        <p><a href="#" class="bouton bouton--active">Bouton</a></p><br>
+        <p>État actif</p>
+        <p>Couleur $green</p>
+      </li>
+    </ul>
+  </section>
+</body>
+</html>

@@ -1,0 +1,38 @@
+
+body {
+  position: relative;
+}
+
+.conteneur {
+  overflow: hidden;
+}
+
+.blurred__title {
+  font-family: $OpenSans;
+  font-size: 19rem;
+  color: transparentize($white, 0.99);
+  overflow: hidden;
+  position: absolute;
+  padding: 3rem;
+  z-index: -1;
+
+  text-shadow: 0 4px 24px $white, 12px 4px 24px $green;
+  margin-top: 5rem;
+  margin-left: 34%;
+}
+
+.accueil .blurred__title {
+  margin-top: 0;
+  margin-left: 0;
+
+  @media (max-width: $medium) {
+    left: 0;
+    margin-top: -5rem;
+  }
+
+  @media (min-width:$medium) {
+    &--2 {
+      margin-top: 20rem;
+    }
+  }
+}
